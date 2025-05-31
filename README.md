@@ -46,6 +46,45 @@ nodemon server.js
 | PATCH  | `/subscribers/:id` | Update subscriber details |
 | DELETE | `/subscribers/:id` | Delete a subscriber |
 
+### 🛠 Testing API with REST Client Extension
+You can use the REST Client extension in VS Code to easily test API endpoints.
+
+#### 📌 Step 1: Install REST Client
+Open VS Code.
+
+Go to Extensions (Ctrl + Shift + X).
+
+#### Search for REST Client.
+
+#### Click Install.
+
+📌 Step 2: Create a .http or .rest File
+Inside your project folder, create a file named requests.http (or requests.rest).
+
+📌 Step 3: Write API Requests
+Example: GET all subscribers
+```sh
+
+GET http://localhost:3000/subscribers
+Example: POST a new subscriber
+
+### Triple hashtags is used to separate requets
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "subscribedToChannel": "Tech World"
+}
+```
+#### 📌 Step 4: Send Requests
+Open your .http or .rest file.
+
+Click the Send Request button above the request.
+
+This will show the response directly in VS Code.
+
 ### 📚 Features
 * CRUD operations following RESTful principles
 
