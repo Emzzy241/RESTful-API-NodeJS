@@ -16,13 +16,14 @@ Content-Type: application/json
 
 ###
 
-DELETE  http://localhost:3000/subscribers/683b1073bdc4ce0a3aa44e96
+DELETE  http://localhost:3000/subscribers/683b2cfc7c12fb6ab374f2fa
 
 ### 
 
-PATCH   http://localhost:3000/subscribers/683b1073bdc4ce0a3aa44e96
+PATCH   http://localhost:3000/subscribers/683b081ff60510b24a83c6a9
 Content-Type: application/json
 
 {
-    "name": "Fire Ship"
+    "name": "Dynasty Dagreat",
+    "subscribedToChannel": "Code Dynasty Studios [CDS] 2.0"
 }
