@@ -1,0 +1,28 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/683b1073bdc4ce0a3aa44e96
+
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "Amazing Person 2",
+    "subscribedToChannel": "Code Dynasty Studios [CDS]"
+}
+
+###
+
+DELETE  http://localhost:3000/subscribers/683b1073bdc4ce0a3aa44e96
+
+### 
+
+PATCH   http://localhost:3000/subscribers/683b1073bdc4ce0a3aa44e96
+Content-Type: application/json
+
+{
+    "name": "Fire Ship"
+}
