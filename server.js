@@ -2,6 +2,7 @@
 require("dotenv").config(); 
 const subscribersRouter = require('./routes/subscribers');
 const followersRoute = require('./routes/followers');
+const connectionsRoute = require('./routes/connections');
 const express = require('express'); 
 const app = express();  
 const mongoose = require('mongoose');
@@ -19,4 +20,5 @@ app.use(express.json());
 
 app.use("/subscribers", subscribersRouter); 
 app.use("/followers", followersRoute);
+app.use("/connections", connectionsRoute);
 app.listen(3000, () => console.log(("Server started")));

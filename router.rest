@@ -56,3 +56,31 @@ Content-Type: application/json
 
 ###
 DELETE http://localhost:3000/followers/683d3d5b1ebd640e2fccd3ab
+
+
+### For connections
+
+GET http://localhost:3000/connections
+
+###
+
+GET http://localhost:3000/connections/683d787c1510d6fcccf902a5
+
+
+### 
+
+POST http://localhost:3000/connections
+Content-Type: application/json
+
+{
+    "name": "Ajayi",
+    "connectedToAccount": "Emmanuel"
+}
+
+###
+PATCH http://localhost:3000/connections
+Content-Type: application/json
+
+{
+    "name": "Dynasty"
+}
