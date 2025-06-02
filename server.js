@@ -1,5 +1,7 @@
 
 require("dotenv").config(); 
+const subscribersRouter = require('./routes/subscribers');
+const followersRoute = require('./routes/followers');
 const express = require('express'); 
 const app = express();  
 const mongoose = require('mongoose');
@@ -14,7 +16,7 @@ db.once("open", () => console.log("Connected to Database"));
 
 app.use(express.json());
 
-const subscribersRouter = require('./routes/subscribers');
-app.use("/subscribers", subscribersRouter); // telling our app we want to use that route, and we want to use this whenever we query subscribers, the url looks like this: localhost:3000/subscribers
 
+app.use("/subscribers", subscribersRouter); 
+app.use("/followers", followersRoute);
 app.listen(3000, () => console.log(("Server started")));

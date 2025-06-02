@@ -27,3 +27,32 @@ Content-Type: application/json
     "name": "Dynasty Dagreat",
     "subscribedToChannel": "Code Dynasty Studios [CDS] 2.0"
 }
+
+### for followers
+
+GET http://localhost:3000/followers
+
+###
+GET http://localhost:3000/followers/683d4b5183b75a6c9ee17108
+
+### 
+POST http://localhost:3000/followers
+Content-Type: application/json
+
+{
+    "name": "Abiodun",
+    "followedToPage": "Emmanuel.9944"
+}
+
+
+### 
+
+PATCH http://localhost:3000/followers/683d3dc6dee13228aa5aaa43
+Content-Type: application/json
+
+{
+    "name": "Dynasty"
+}
+
+###
+DELETE http://localhost:3000/followers/683d3d5b1ebd640e2fccd3ab
