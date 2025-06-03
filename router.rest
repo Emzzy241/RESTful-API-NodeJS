@@ -82,5 +82,6 @@ PATCH http://localhost:3000/connections/683d77d1207a2898df0d3e5b
 Content-Type: application/json
 
 {
-    "name": "Dynasty"
+    "name": "Dynasty",
+    "connectedToAccount": "Emmanuel.9944"
 }

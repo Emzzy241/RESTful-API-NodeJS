@@ -55,13 +55,16 @@ router.post("/", async (req, res) => {
 //     }
 // })
 
-router.patch(":/id", async (req, res) => {
+router.patch("/:id", async (req, res) => {
     // console.log("Route Working fine")
     try {
         let connection = await Connection.findById(req.params.id)
         if (connection != null) {
             if (req.body.name != null) {
                 connection.name = req.body.name
+            }
+            if (req.body.connectedToAccount != null) {
+                connection.connectedToAccount = req.body.connectedToAccount
             }
         }
 
